@@ -1,0 +1,23 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "lite-server"
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amalshyjo/amalshyjo.git"
+  },
+  "author": "Amal Shyjo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/amalshyjo/amalshyjo/issues"
+  },
+  "homepage": "https://github.com/amalshyjo/amalshyjo#readme",
+  "devDependencies": {
+    "lite-server": "^2.5.4"
+  }
+}
