@@ -1,12 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap');
 .josefin{
     font-family: 'Josefin Sans', sans-serif;
+}
+.dark_mamba{
+    background-color: black;
+}
+.red_mamba{
+    background-color:#D90429 ;
 }
 .header_style{
     background-image:url(../Images/mainbg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-color: black;
+    width: 100%;
 }
 .hdr_row{
     padding: 2%;
@@ -19,4 +26,91 @@ a {
 }
 a:hover {
     color: #D90429; 
+  }
+  .ahover:hover{
+    color: rgb(26, 26, 26);
+
+  }
+  .ahover{
+    background-color: rgba(255, 255, 255, 0);
+  }
+.text_light{
+    color:rgb(199, 199, 199);
+}
+.text_red{
+    color: #EF233C;
+}
+.text_dark{
+    color: black;
+}
+/*----------------------- Preloader -----------------------*/
+body.preloader-site {
+    overflow: hidden;
+}
+
+.preloader-wrapper {
+    height: 100%;
+    width: 100%;
+    background: rgb(0, 0, 0);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999999;
+}
+
+.preloader-wrapper .preloader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 120px;
+}
+.load_h1{
+    display: block;
+    position: absolute;
+    bottom: 5%;
+    padding-bottom: 50px;
+    right: 10px;
+    font-family: 'Josefin Sans', sans-serif;
+    max-width: 320px;
+    line-height: 19px;
+    z-index: 1;
+}
+
+.loading {
+    background: 50% 50%/50% 50% no-repeat radial-gradient(ellipse at bottom, rgb(255, 0, 0), transparent, transparent);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size: 25px;
+    font-family: 'Josefin Sans', sans-serif;
+    -webkit-animation: reveal 50ms , glow 800ms linear infinite 400ms;
+            animation: reveal 50ms , glow 800ms linear infinite 400ms;
+  }
+  @-webkit-keyframes reveal {
+    80% {
+      letter-spacing: 8px;
+    }
+    100% {
+      background-size: 150% 150%;
+    }
+  }
+  @keyframes reveal {
+    80% {
+      letter-spacing: 8px;
+    }
+    100% {
+      background-size: 150% 150%;
+    }
+  }
+  @-webkit-keyframes glow {
+    40% {
+      text-shadow: 0 0 8px rgb(255, 81, 81);
+    }
+  }
+  @keyframes glow {
+    40% {
+      text-shadow: 0 0 8px rgb(255, 81, 81);
+    }
   }

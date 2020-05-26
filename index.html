@@ -12,20 +12,62 @@
     <!--Other Links-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
     <script src="js/modernizr.js"></script>
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+    <script src="https://kit.fontawesome.com/663e2580a1.js" crossorigin="anonymous"></script>  
     <!--CSS-->
     <link href="./assets/css/main.css" rel="stylesheet">
     <link href="./assets/css/impossible.typsy.css" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/toggle_nav.css">
-    <script src="https://kit.fontawesome.com/663e2580a1.js" crossorigin="anonymous"></script>  
     <link rel="stylesheet" href="./assets/css/reset.css"> <!-- CSS reset -->
-	<link rel="stylesheet" href="./assets/css/text_change.css"> <!-- Resource style --> 
+    <link rel="stylesheet" href="./assets/css/text_change.css"> <!-- Resource style --> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="stylesheet" href="./assets/css/preloader.css">
   </head>
 
-  <body>
-    <header class="header_style col-12 p-5">
+  <body class="dark_mamba">
+      <!-- P   R   E  L  O  A  D  E  R  -->
+        <div class="preloader-wrapper">
+            <div class="preloader">
+                <h1 class="load_h1 text_red loading" style="padding-left: 200px;" >LOADING&nbsp;.&nbsp;.&nbsp;.</h1>
+                <div class="loadwrap">
+                    <div class="loader" style="margin-left: -50px; margin-top: -50px;">
+                        <div class="box box0">
+                            <div></div>
+                        </div>
+                        <div class="box box1">
+                            <div></div>
+                        </div>
+                        <div class="box box2">
+                            <div></div>
+                        </div>
+                        <div class="box box3">
+                            <div></div>
+                        </div>
+                        <div class="box box4">
+                            <div></div>
+                        </div>
+                        <div class="box box5">
+                            <div></div>
+                        </div>
+                        <div class="box box6">
+                            <div></div>
+                        </div>
+                        <div class="box box7">
+                            <div></div>
+                        </div>
+                        <div class="ground">
+                            <div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+      <!--  P  R  E  L  O  A  D  E  R     E  N  D-->
+    <header class="header_style col-12 p-2 ">
         <nav>
-            <div class="row text-center" >
-                <div class="m_button col-12">
+            <div class="row text-center" style="padding: opx;">
+                <div class="m_button col-12" style="padding: inherit;">
                     <span></span>
                     <span></span>
                     <span></span>
@@ -37,35 +79,68 @@
             <div class="row hdr_row">
                 <div class="col-12 col-sm-4 align-self-center text-center">
                     <div class="row" style="padding: 0px; margin: 0px;">
-                        <div class="col-12 col-sm-6" style="padding: 0px; margin: 0px; ">
-                            <h1 style="font-size: 50px; color: rgb(199, 199, 199);" class="josefin">Amal&nbsp;Shyjo </h1>
+                        <div class="col-12 col-lg-6" style="padding: 0px; margin: 0px; font-size: 40px;">
+                            <h1  class="josefin text_light">Amal&nbsp;Shyjo </h1>
                         </div>
-                        <div class="col-12 col-sm-6" style="padding: 0px; margin: 0px;">
-                           
-                                <span   style="color: #EF233C; font-size: 40px;" class="ml-4 josefin">
-                                   <a href="https://www.instagram.com/photographershyjo/?igshid=ccvimfc69j3b"> <i class="fab fa-instagram pl-2"></i></a> 
-                                   <a href="https://www.linkedin.com/in/amal-shyjo-07ideci1998"><i class="fab fa-linkedin-in pl-2"></i></a> 
-                                   <a href="mailto:amalshyjo@gmail.com"> <i class="far fa-envelope pl-2"></i></a> 
-                                    </span> 
-                        
+                        <div class="col-12 col-lg-6" style="padding: 0px; margin: 0px; font-size: 40px;">
+                            <h1>
+                                <span    class=" josefin text_red">
+                                   <span  data-toggle="modal" data-target="#socialModalCenter"> <ion-icon name="chatbox-ellipses"></ion-icon></span> 
+                                   <a href="https://www.linkedin.com/in/amal-shyjo-07ideci1998"><ion-icon name="logo-linkedin"></ion-icon></i></a> 
+                                   <a href="https://github.com/amalshyjo"> <ion-icon name="logo-github"></ion-icon></a> 
+                                </span> 
+                            </h1>
                         </div>  
                     </div>   
-                </div>
+                </div> 
+                    <!-- Modal -->
+                    <div class="modal fade p-5" id="socialModalCenter" tabindex="-1" role="dialog" aria-labelledby="socialModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered " role="document" >
+                        <div class="modal-content red_mamba">
+                            <div class="modal-body " style="font-size: 40px;">
+                                <div class="row text-center">
+                                    <Div class="col-12 " href="">
+                                        <a class="ahover">
+                                            <ion-icon aria-hidden="true" data-dismiss="modal" aria-label="Close" class="text_dark" name="close"></ion-icon>
+                                        </a>
+                                    </Div>
+                                    <div class="col-12 text_dark">  
+                                        <a href="https://www.instagram.com/photographershyjo/?igshid=vcpbv9lzlmup" class="ahover"><ion-icon name="logo-instagram"></ion-icon></a>
+                                        <a href="mailto:amalshyjo@gmail.com " class="ahover"> <ion-icon name="mail-unread"></ion-icon></a> 
+                                        <a href="tel:+919074959925 " class="ahover"> <ion-icon name="call"></ion-icon></a> 
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
                 <div class="col-12  col-sm-4">
                     <img src="./assets/Images/Amal Shyjo.jpg" class=" col-12  amal_img" target="_blank" style="width: auto; height: auto;">
                 </div>
-                <div class="col-12  col-sm-4 align-self-center text-center">
-
-                    <h1 class="cd-headline letters type " style="font-size: 50px;">
-                        <span class="cd-words-wrapper waiting" style="color: #EF233C; ">
-                            <b class="is-visible josefin"><h1>Web</h1></b>
-                            <b class="josefin"><strong>App</strong></b>
-                            <b class="josefin"><strong>UI/UX</strong></b>
-                            <b class="josefin"><strong>Game</strong></b>
-                        </span>
-                        <span style="color: rgb(199, 199, 199);" class="josefin">Developer</span> 
-                    </h1>
-                    </h1>
+                <div class="col-12 col-sm-4 align-self-center text-center">
+                    <div class="row" style="padding: 0px; margin: 0px; font-size: 40px;">
+                        <div class="col-12 col-lg-6 text-center text_red" style="padding: 0px; margin: 0px; font-size: inherit;">
+                            <h1 class="cd-headline letters type " style="font-size: inherit;">
+                            
+                                <span class="cd-words-wrapper waiting text_red">
+                                    
+                                    <b class="is-visible josefin"><h1>Front-End</h1></b>
+                                    <b class="josefin"><strong>Application</strong></b>
+                                    <b class="josefin"><strong>UI/UX</strong></b>
+                                    <b class="josefin"><strong>Game</strong></b>
+                                    
+                                </span>
+                           
+                            </h1>
+                            
+                        </div>
+                        <div class="col-12 col-lg-6 align-self-center text-center" style="padding: 5px; margin: 0px;">
+                           
+                            <h1  class="josefin text_light">Developer</h1>
+                        
+                        </div>  
+                    </div>   
                 </div>
             </div>
         </div>
@@ -76,6 +151,8 @@
     <script src="./assets/javascript/text_canhe_jq.js"></script>
     <script src="./assets/javascript/text_change.js"></script>
     <script src="./assets/javascript/particlestar.js"></script>
+    <script src="jquery.js"></script>
+    <script src="preloader.js"></script>   
     <!-- Script-->
     <script  src="./assets/javascript/toggle_nav.js"></script>
     <!--Bootstrap Script-->
