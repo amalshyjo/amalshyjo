@@ -7,5 +7,5 @@ $(window).load(function() {
         preloaderFadeOutTime = 3000;
         $('.preloader-wrapper').fadeOut(preloaderFadeOutTime);
         $('body').removeClass('preloader-site');
-    }, 3000);
+    }, 5000);
 });
