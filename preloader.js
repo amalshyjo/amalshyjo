@@ -5,8 +5,8 @@ $(document).ready(function($) {
 });
 $(window).load(function() {
     setTimeout(function() {
-        preloaderFadeOutTime = 3000;
+        preloaderFadeOutTime = 2000;
         $('.preloader-wrapper').fadeOut(preloaderFadeOutTime);
         $('body').removeClass('preloader-site');
-    }, 5000);
+    }, 2000);
 });

@@ -20,17 +20,18 @@
     <link rel="stylesheet" href="./assets/css/text_change.css"> <!-- Resource style --> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
     <link rel="stylesheet" href="./assets/css/preloader.css">
+    <link rel="stylesheet" href="./assets/css/navmenu.css">
   </head>
 
   <body class="dark_mamba">
-    <div id="player">
+   <!-- <div id="player">
         <audio autoplay hidden id="massda">
          <source src="./assets/audio/Rocky bhai kgf bgm.mp3" type="audio/mpeg">
                     If you're reading this, audio isn't supported. 
         </audio>
-    </div>
+    </div>-->
       <!-- P   R   E  L  O  A  D  E  R  -->
-        <div class="preloader-wrapper">
+      <!--  <div class="preloader-wrapper">
             <a href="https://codepen.io/aaroniker/pen/MWgRBdV" class="" style="color: rgba(63, 63, 63, 0.514);margin-top:200px; font-size: 10px; padding-left: 5%;">3D Model by Aaron Iker</a>
             <div class="preloader">
                 <h1 class="load_h1 text_red loading" style="padding-left: 200px;" >LOADING&nbsp;.&nbsp;.&nbsp;.</h1>
@@ -68,17 +69,28 @@
                 </div>
             </div>
         </div>
-        
+       --> 
       <!--  P  R  E  L  O  A  D  E  R     E  N  D-->
     <header class="header_style col-12 p-2 ">
-        <nav>
-            <div class="row text-center" style="padding: opx;">
+        <nav class="" id="navcheck">
+            <div class="row text-center navMenu" style="padding: opx;" onclick="openNav()">
                 <div class="m_button col-12" style="padding: inherit;">
                     <span></span>
                     <span></span>
                     <span></span>
                   </div>
             </div>
+            <div id="myNav" class="overlay">
+
+                <!-- Overlay content -->
+                <div class="overlay-content">
+                  <a href="http://www.chris-cook.net" target="_blank">HOME</a>
+                  <a href="http://www.chris-cook.net" target="_blank">ABOUT</a>
+                  <a href="http://www.chris-cook.net" target="_blank">SERVICES</a>
+                  <a href="http://www.chris-cook.net" target="_blank">CONTACT</a>
+                </div>
+          
+              </div>        
            
         </nav>
         <div class=" pt-3 pb-3">
@@ -111,9 +123,9 @@
                                         </a>
                                     </Div>
                                     <div class="col-12 text_dark">  
-                                        <a href="https://www.instagram.com/photographershyjo/?igshid=vcpbv9lzlmup" class="ahover"><ion-icon name="logo-instagram"></ion-icon></a>
-                                        <a href="mailto:amalshyjo@gmail.com " class="ahover"> <ion-icon name="mail-unread"></ion-icon></a> 
-                                        <a href="tel:+919074959925 " class="ahover"> <ion-icon name="call"></ion-icon></a> 
+                                        <a href="https://www.instagram.com/photographershyjo/?igshid=vcpbv9lzlmup" class="ahover" style="padding: 5%;"><ion-icon name="logo-instagram"></ion-icon></a>
+                                        <a href="mailto:amalshyjo@gmail.com " class="ahover" style="padding: 5%;"> <ion-icon name="mail-unread" ></ion-icon></a> 
+                                        <a href="tel:+919074959925 " class="ahover" style="padding: 5%;"> <ion-icon name="call"></ion-icon></a> 
                                         
                                     </div>
                                 </div>
@@ -159,11 +171,13 @@
     <script src="./assets/javascript/particlestar.js"></script>
     <script src="jquery.js"></script>
     <script src="preloader.js"></script>   
+    <script src="./assets/javascript/navmenu.js"></script> 
     <!-- Script-->
     <script  src="./assets/javascript/toggle_nav.js"></script>
     <script src="js/modernizr.js"></script>
     <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
     <script src="https://kit.fontawesome.com/663e2580a1.js" crossorigin="anonymous"></script>  
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
     <!--Bootstrap Script-->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js" integrity="sha384-1CmrxMRARb6aLqgBO7yyAxTOQE2AKb9GfXnEo760AUcUmFx3ibVJJAzGytlQcNXd" crossorigin="anonymous"></script>

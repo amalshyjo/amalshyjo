@@ -13,7 +13,7 @@
   -webkit-box-direction: normal;
           flex-direction: column;
   cursor: pointer;
-
+  z-index: 999;
   width: 80px;
   height: 80px;
   border-radius: 0px;
